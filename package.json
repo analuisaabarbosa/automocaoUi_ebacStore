@@ -1,0 +1,22 @@
+{
+  "name": "automocao_ui_cypress",
+  "version": "1.0.0",
+  "description": "Cenários de teste para uma plataforma ecommerce.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/analuisaabarbosa/automocao_ui_cypress.git"
+  },
+  "author": "analuisaabarbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/analuisaabarbosa/automocao_ui_cypress/issues"
+  },
+  "homepage": "https://github.com/analuisaabarbosa/automocao_ui_cypress#readme",
+  "dependencies": {
+    "cypress": "^13.13.2"
+  }
+}
