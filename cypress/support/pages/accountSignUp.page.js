@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import { faker } from '@faker-js/faker';
 
-var firstName = faker.person.firstName()
+export var firstName = faker.person.firstName()
 var lastName = faker.person.lastName()
 var phoneNumber = faker.phone.number()
 var email = faker.internet.email(firstName)

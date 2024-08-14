@@ -2,6 +2,7 @@
 
 const { accountSignUpPage } = require("../support/pages/accountSignUp.page");
 const { homePage } = require("../support/pages/home.page");
+const { profilePage, firstName } = require("../support/pages/profile.page");
 
 describe('Account Creation Flow', () => {
     
@@ -13,6 +14,8 @@ describe('Account Creation Flow', () => {
     it('Should allow a user to successfully create an account', () => {
         homePage.openMenu('Account')
         accountSignUpPage.signUp()
+        homePage.openMenu('Account')
+        profilePage.customerName()
     });
 
 });
