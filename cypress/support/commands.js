@@ -26,9 +26,8 @@
 
 const { homePage } = require("../support/pages/home.page");
 const { addNewAdressPage } = require("../support/pages/addNewAdress.page");
-const { name, phoneNumber } = require("../fixtures/data.json");
 
-Cypress.Commands.add('login', (email, password) => { 
+Cypress.Commands.add('login', (email, password) => {
     homePage.openMenu('Account')
     cy.get('[data-testid="email"]').type(email)
     cy.get('[data-testid="password"]').type(password)
@@ -38,6 +37,8 @@ Cypress.Commands.add('login', (email, password) => {
 }),
 
 Cypress.Commands.add('purchaseFlow', () => {
+    const name = Cypress.env('NAME');
+    const phoneNumber = Cypress.env('PHONE_NUMBER');
     cy.get('[style="background-color: rgb(242, 242, 242);"] > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > .r-1d5kdc7 > :nth-child(1) > :nth-child(1) > .r-13awgt0 > :nth-child(1) > .r-mh9cjk > .r-18u37iz > :nth-child(2) > .css-146c3p1').click()
     cy.get('[data-testid="continueShopping"]').click()
     cy.get('[data-testid="__CAROUSEL_ITEM_0_READY__"] > .r-1kihuf0 > .r-1jnx3et > .r-13w96dm > [data-testid="banner"]').click()
@@ -48,7 +49,7 @@ Cypress.Commands.add('purchaseFlow', () => {
     cy.get(':nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > [style="background-color: rgb(242, 242, 242); display: flex;"] > :nth-child(1) > :nth-child(1) > .r-13awgt0 > :nth-child(3) > [data-testid="selectAddressOrContinueToPayment"]').click()
     cy.get('[data-testid="completeCheckout"]').click()
     cy.get(':nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > [style="background-color: rgb(242, 242, 242); display: flex;"] > :nth-child(1) > :nth-child(1) > .r-13awgt0 > :nth-child(1) > .css-175oi2r > .css-146c3p1').should('contain', 'Order Success')
-})
+    })
 
 Cypress.Commands.add('emptyingShoppingCart', () => {
     homePage.openMenu('Home')
