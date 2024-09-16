@@ -10,10 +10,8 @@ module.exports = defineConfig({
       
     },
     env: {
-      EMAIL: process.env.EMAIL,
-      PASSWORD: process.env.PASSWORD,
-      NAME: process.env.NAME,
-      PHONE_NUMBER: process.env.PHONE_NUMBER
+      email: process.env.EMAIL,
+      password: process.env.PASSWORD
     }
   },
 });
