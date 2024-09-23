@@ -19,3 +19,7 @@ Cypress.Commands.add('purchaseFlow', () => {
     cy.get('[data-testid="completeCheckout"]').click()
     cy.get('[data-testid="goBackHome"]').should('contain', 'Go Back Home')
 })
+
+Cypress.Commands.add('openShoppingCart', () => {
+    cy.get('[style="background-color: rgb(242, 242, 242);"] > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > .r-1d5kdc7 > :nth-child(1) > :nth-child(1) > .r-13awgt0 > :nth-child(1) > .r-mh9cjk > .r-18u37iz > :nth-child(2) > .r-lrvibr').click()
+})
