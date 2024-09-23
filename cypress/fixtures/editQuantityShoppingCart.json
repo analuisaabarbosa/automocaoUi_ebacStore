@@ -1,0 +1,58 @@
+{
+    "success": true,
+    "cart": {
+        "_id": "66ed7cac9a71c994ace3f062",
+        "products": [
+            {
+                "productId": {
+                    "_id": "66d60a1ea60ca1ef7fa04095",
+                    "photos": [
+                        "http://lojaebac.ebaconline.art.br/lojaebac/lojaebac/ingrid1-1725303325813.webp",
+                        "http://lojaebac.ebaconline.art.br/lojaebac/lojaebac/ingrid2-1725303325815.webp"
+                    ],
+                    "name": "Ingrid Running Jacket",
+                    "price": 100,
+                    "quantity": 9979,
+                    "specialPrice": 84
+                },
+                "quantity": 2,
+                "_id": "66edc3a09a71c994ace3fcab"
+            },
+            {
+                "productId": {
+                    "_id": "66d609e2a60ca1ef7fa04093",
+                    "photos": [
+                        "http://lojaebac.ebaconline.art.br/lojaebac/lojaebac/oxford2-1725303265924.webp",
+                        "http://lojaebac.ebaconline.art.br/lojaebac/lojaebac/oxford3-1725303265926.webp",
+                        "http://lojaebac.ebaconline.art.br/lojaebac/lojaebac/oxford1-1725303265921.webp"
+                    ],
+                    "name": "Womens Wingtip Shoes Handmade Sheepskin Full Brogues Oxfords & Tie Flats",
+                    "price": 106,
+                    "quantity": 9996,
+                    "specialPrice": 101
+                },
+                "quantity": 3,
+                "_id": "66edc3a59a71c994ace3fcbe"
+            },
+            {
+                "productId": {
+                    "_id": "66d609b0a60ca1ef7fa04091",
+                    "photos": [
+                        "http://lojaebac.ebaconline.art.br/lojaebac/lojaebac/sandals1-1725303216607.webp",
+                        "http://lojaebac.ebaconline.art.br/lojaebac/lojaebac/sandals2-1725303216609.webp"
+                    ],
+                    "name": "Handmade Leather Donddi sandals For Women",
+                    "price": 100,
+                    "quantity": 9952,
+                    "specialPrice": 83
+                },
+                "quantity": 4,
+                "_id": "66edc3a89a71c994ace3fccc"
+            }
+        ],
+        "userId": "66e2f5e49a71c994ace3a4d6",
+        "createdAt": "2024-09-20T13:46:20.123Z",
+        "updatedAt": "2024-09-20T18:49:20.766Z",
+        "__v": 0
+    }
+}
