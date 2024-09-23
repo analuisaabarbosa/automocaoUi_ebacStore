@@ -4,7 +4,7 @@ const { accountSignUpPage } = require("../support/pages/accountSignUp.page");
 const { homePage } = require("../support/pages/home.page");
 const { profilePage } = require("../support/pages/profile.page");
 
-describe('Account Creation Flow', () => {
+describe('Account creation flow', () => {
     
     beforeEach(() => {
         cy.setCookie('ebacStoreVersion', 'v2', { domain: 'lojaebac.ebaconline.art.br' }),
