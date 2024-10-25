@@ -11,6 +11,8 @@ describe('Shopping cart flow', () => {
         const email = Cypress.env('email');
         const password = Cypress.env('password')
 
+        cy.log(email, password)
+
         cy.login(email, password)
         cy.purchaseFlow()
     });
