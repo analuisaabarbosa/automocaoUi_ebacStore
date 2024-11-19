@@ -22,6 +22,7 @@
     "cypress": "^13.13.2"
   },
   "devDependencies": {
+    "@reportportal/agent-js-cypress": "^5.4.0",
     "dotenv": "^16.4.5"
   }
 }
